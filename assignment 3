@@ -1,0 +1,36 @@
+3-1:import numpy as np
+x=np.array([1,2,3,4])
+y=np.array([5.5,6.5,7.5,8.5])
+print(np.add(x,y))
+print(np.subtract(x,y))
+print(np.multiply(x,y))
+print(np.divide(y,x))     op:import numpy as np
+x=np.array([1,2,3,4])
+y=np.array([5.5,6.5,7.5,8.5])
+print(np.add(x,y))
+print(np.subtract(x,y))
+print(np.multiply(x,y))
+print(np.divide(y,x))
+
+
+
+3-2:x=np.array([[1,21],[33,4],[5,0]])
+print(np.sqrt(x))
+print(np.sum(x,axis=0))
+print(np.sum(x,axis=1))
+print(np.max(x,axis=0))
+print(np.min(x,axis=0))
+print(np.max(x,axis=1))
+print(np.min(x,axis=1))
+print(x.mean())
+print(np.median(x))  op:[[1.         4.58257569]
+ [5.74456265 2.        ]
+ [2.23606798 0.        ]]
+[39 25]
+[22 37  5]
+[33 21]
+[1 0]
+[21 33  5]
+[1 4 0]
+10.666666666666666
+4.5

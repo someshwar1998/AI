@@ -10,6 +10,8 @@ a=[{'Year':1990,'name':'Alice','Department':'Hr','Age':25,'Salary':50000},
   {'Year':1992,'name':'Charlie','Department':'Admin','Age':28,'Salary':62000}]
 print(a)
 
+op:[{'Year': 1990, 'name': 'Alice', 'Department': 'Hr', 'Age': 25, 'Salary': 50000}, {'Year': 1990, 'name': 'Bob', 'Department': 'Rd', 'Age': 30, 'Salary': 48000}, {'Year': 1990, 'name': 'Charlie', 'Department': 'Admin', 'Age': 45, 'Salary': 55000}, {'Year': 1991, 'name': 'Alice', 'Department': 'Hr', 'Age': 26, 'Salary': 52000}, {'Year': 1991, 'name': 'Bob', 'Department': 'Rd', 'Age': 31, 'Salary': 50000}, {'Year': 1991, 'name': 'charlie', 'Department': 'Admin', 'Age': 46, 'Salary': 60000}, {'Year': 1992, 'name': 'Alice', 'Department': 'ADmin', 'Age': 27, 'Salary': 60000}, {'Year': 1992, 'name': 'Bob', 'Department': 'Rd', 'Age': 32, 'Salary': 52000}, {'Year': 1992, 'name': 'Charlie', 'Department': 'Admin', 'Age': 28, 'Salary': 62000}]
+
 
 
 4-2:import pandas as pd
@@ -24,3 +26,26 @@ c=a1.groupby(['name'])['Salary'].sum()
 print("the salary recieved by each emp",c)
 d=a1.groupby(['Year','Department'])['Salary'].sum()
 print("salary spent on each dept",d )
+
+op:total salary spent in year Year
+1990    153000
+1991    162000
+1992    174000
+Name: Salary, dtype: int64
+the salary recieved by each emp name
+Alice      162000
+Bob        150000
+Charlie    117000
+charlie     60000
+Name: Salary, dtype: int64
+salary spent on each dept Year  Department
+1990  Admin         55000
+      Hr            50000
+      Rd            48000
+1991  Admin         60000
+      Hr            52000
+      Rd            50000
+1992  ADmin         60000
+      Admin         62000
+      Rd            52000
+Name: Salary, dtype: int64

@@ -24,3 +24,6 @@ print(len(a)-len(b))                       op:6
 tuple_b=(3,4)
 print(tuple_a==tuple_b)
 print(tuple_a[1])
+
+1-5:names=["carol","Albert","Ben","Donna"]
+print("&".join(sorted(names)))
